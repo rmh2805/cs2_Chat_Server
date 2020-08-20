@@ -314,7 +314,7 @@ public class Client implements ChatterboxProtocol {
         String lastLine = NextServer ();
         if (!lastLine.isEmpty ()) {
             serverInBuffer += lastLine;
-            if (lastLine.charAt (lastLine.length () - 1) == '\n') {
+            if (lastLine.charAt(lastLine.length () - 1) == '\n') {
                 String temp = serverInBuffer;
                 serverInBuffer = "";
                 return temp;
